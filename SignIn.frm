@@ -79,6 +79,7 @@ With rs
         Form1.username = Text1.Text
         
         Form1.login_status = 1
+        Form1.admin_status = rs.Fields("ADMIN")
         rs.Close
         cn.Close
         Form1.d.Enabled = False

@@ -45,7 +45,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Public username As String
-Public admin As Integer
+Public admin_status As Integer
 Public login_status As Integer
 Private Sub a_Click()
 Form2.Show
@@ -57,12 +57,12 @@ End Sub
 
 Private Sub c_Click()
 
-'If admin = 0 Then
-'MsgBox "You Are Not An Admin!", vbCritical, "Admin Status"
-'Else
+If admin = 0 Then
+MsgBox "You Are Not An Admin!", vbCritical, "Admin Status"
+Else
 Adminp.Show
 Form1.Hide
-'End If
+End If
 
 End Sub
 
